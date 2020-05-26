@@ -1,0 +1,386 @@
+body {
+	background-color:#FAF7F2;
+	margin: auto;
+}
+
+/*navigation bar*/
+.top_header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+	z-index:3;
+}
+
+.topnav {
+	list-style: none;
+	margin: 0;
+	padding: 14px 16px;
+	text-align: right;
+}
+
+.topnav ul li{
+	display: inline;
+}
+
+.topnav li {
+	padding: 7px;
+	display: inline-block;
+	list-style: none;
+}
+
+/* Style links inside navigation bar */
+.topnav a {
+	display:inline;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Century Gothic;
+}
+
+/* Change colour of links on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.main {
+	margin-top: 30px;
+}
+
+.logo {
+	display: block;
+	float: left;
+	padding: 8px;
+	padding-top: 10px;
+	margin-left: 15px;
+}
+
+/*All headers*/
+.header{
+	color: black;
+	font-size: 25px;
+	font-family: Poppins;
+	padding-left: 50px;
+}
+
+/*headers for workshops/collabs*/
+.header_events{
+	color: black;
+	font-size: 25px;
+	font-family: Raleway;
+	padding-left: 50px;
+}
+
+/*All body para*/
+.info {
+	color: black;
+	font-size: 15px;
+	font-family: Karla;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/*3 cols in a row images*/
+.row {
+	margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+	padding: 8px;
+}
+
+.column {
+	float: left;
+	width: 40%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+	background-color: white;
+	padding: 10px;
+	height: 100%;
+}
+
+.column_hobby {
+  float: left;
+  width: 33.3%;
+  padding: 30px;
+}
+
+.row_hobby::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#education, #experience{
+	background-color: #E7DFDF;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+
+#coxo{
+	background-color: #DDD3D3;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+
+/*hobby page*/
+/*header image transparent overlay*/
+.hobby-header {
+	position:relative;
+	margin: 0 auto;
+}
+
+/*header image text*/
+.hobby-content{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.5);
+	color: white;
+	width: 100%;
+	padding: 50px;
+	padding-top: 7%;
+}
+
+.h2-header {
+	font-family: Spectral;
+	font-size: 75px;
+	text-align: center;
+}
+
+.hobby-header .hobby-content p {
+	font-family: Karla;
+	font-size: 18px;
+	margin-top: 0;
+	text-align: center;
+}
+
+.interest {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.interest p {
+	margin-left: 28px;
+	font-family: Work Sans;
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+/*3 images displaying the artworks*/
+.design {
+	z-index: 2;
+}
+
+* {box-sizing:border-box}
+
+.business p {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	font-family: Work Sans;
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	z-index: 1;
+}
+
+.mySlides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+
+.box {
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	padding-left:50px;
+	box-sizing: border-box;
+	background: #fff;
+	display: flex;
+}
+
+.box .imgBox {
+	width: 60%;
+	flex: 0 0 350px;
+}
+
+.box .imgBox img {
+	max-width: 100%;
+}
+
+.box .content-events {
+	padding-left: 30px;
+	padding-top: 120px;
+	padding-right: 50px;
+}
+
+.box .content h2 {
+	margin: 0;
+	padding-left: 0;
+	color: black;
+	font-size: 40px;
+	font-family: Space Mono;
+}
+
+.box .content h3 {
+	margin: 0;
+	padding-left: 0;
+	font-size: 18px;
+	color: black;
+	font-family: Space Mono;
+}
+
+.box .content p {
+	margin: 0;
+	padding: 10px 0;
+	text-align: justify;
+	color: black;
+	font-size: 15px;
+	font-family: Work Sans;
+}
+
+.events {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 84%;
+}
+
+.header-events {
+	font-family: Space Mono;
+	font-size: 17px;
+	margin-top: 20px;
+	padding-left: 5px;
+}
+
+.events p {
+	font-family: Work Sans;
+	font-size: 15px;
+	margin-top: 5px;
+	padding-left: 5px;
+}
+
+.box .content-workshop {
+	padding-left: 30px;
+	padding-top: 140px;
+	padding-right: 50px;
+}
+
+.box .content-collab {
+	padding-left: 30px;
+	padding-top: 90px;
+	padding-right: 50px;
+}
+
+.footer {
+	background: #A49696
+}
+
+.footer-header {
+	color: white;
+	font-size: 18px;
+	font-family: Poppins;
+	text-align: center; /* Center text*/
+}
+
+.footer-body {
+	color: white;
+	font-size: 14px;
+	font-family: Karla;
+	text-align: center; /* Center text*/
+	padding-bottom: 10px;
+}

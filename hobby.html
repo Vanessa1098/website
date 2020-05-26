@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Xin Jie</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Poppins:700' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:800' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Space Mono:700' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Spectral:700' rel='stylesheet'>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<body>
+<div class="top_header">
+	<a href="./portfolio.html">
+		<img class="logo" src="./xinjie-logo.png" width=70px>
+	</a>
+	<nav>
+		<ul class="topnav">
+			<li><a class="aboutme" href="./portfolio.html#aboutme" align="centre">ABOUT ME</a>
+			<li><a class="education" href="./portfolio.html#education" align="centre">EDUCATION</a>
+			<li><a class="projects" href="./portfolio.html#projects" align="centre">PROJECTS</a>
+			<li><a class="experience" href="./portfolio.html#experience" align="centre">EXPERIENCE</a>
+			<li><a class="hobby" href="./hobby.html" align="centre">HOBBY</a>
+		</ul>
+	</nav>
+</div>
+
+<div class="main">
+	<div class="hobby-header">
+		<img class="design" src="hobby/design.png" style="width:100%">
+		<div class="hobby-content">
+			<div class="h2-header">Art and design</div>
+			<p>I craft, paint and design. Read my story!</p>
+		</div>
+	</div>
+
+	<div class="interest">
+		<br><br>
+		<p>My interest in art started with jewelry crafting, and I slowly developed my interest 
+		in brush calligraphy, watercolour art and resin art.</p>
+		<div class="row_hobby">
+			<div class="column_hobby">
+				<img src="artworks/watercolour.JPG" style="width:100%">
+			</div>
+			<div class="column_hobby">
+				<img src="artworks/bracelet.png" style="width:100%">
+			</div>
+			<div class="column_hobby">
+				<img src="artworks/cards.jpg" style="width:100%">
+			</div>
+		</div>
+	</div>
+	
+	<br><br><br>
+	<div id="coxo">
+	<br><br>
+	<div class="business">
+		<img src="hobby/favicon2.png" class="center">
+		<p>With this love for art and crafting, I started a small online business, 
+		Coxo Vanessa in 2011. Coxo Vanessa is run and managed individually, and is first 
+		launched on Instagram. Initially, Coxo Vanessa specialises in customised jewelry. 
+		However, as I developed my interest in different forms of art, vinyl and self-designed 
+		prints are introduced to the brand.  Today, it operates on an online website and offers 
+		vinyl and card customisations, together with personalised jewelry.</p>
+		<br>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="hobby/thermal_flask.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="hobby/pouch.png" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="hobby/phone.png" style="width:100%">
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+	</div>
+	</div>
+	
+	<br><br><br>
+	<div class="box">
+		<div class="imgBox">
+			<img src="hobby/sam.JPG">
+		</div>
+		<div class="content">
+			<div class="content-events">
+				<h2>Public Craft Markets</h2>
+				<h3>Singapore Art Museum</h3>
+				<p>This is Coxo Vanessa's first public market, back in 2018. 
+				In conjuncture with Singapore Night Festival, this art market was held at Singapore 
+				Art Museum where local makers gather to showcase their creative works.</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="events">
+		<div class="row_hobby">
+			<div class="column_hobby">
+				<img src="hobby/barrage.PNG" style="width:100%">
+				<div class="header-events">Marina Barrage</div>
+				<p>A pop-up carnival that celebrates Marina Barrage's 10th anniversary.</p>
+			</div>
+			<div class="column_hobby">
+				<img src="hobby/SIM.JPG" style="width:100%">
+				<div class="header-events">Singapore Institute of Management</div>
+				<p>A Social Innovation Park Christmas Carnival held at SIM. </p>
+			</div>
+			<div class="column_hobby">
+				<img src="hobby/reddot.JPG" style="width:100%">
+				<div class="header-events">Red Dot Design Museum</div>
+				<p>Market of Artists and Designers (MAAD) hosted by Red Dot Design Museum showcases unique,
+				quirky, handmade and original creations.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="box">
+		<div class="imgBox">
+			<img src="hobby/workshop.JPG">
+		</div>
+		<div class="content">
+			<div class="content-workshop">
+				<h2>Workshop</h2>
+				<h3>Clementi Mall</h3>
+				<p>A jewelry making workshop held in Clementi Mall as part of The Clementi
+				Fiesta. Participants were mostly children aged between 8-12 years old where they
+				learnt how to craft their very own chain woven bracelet.</p>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	
+	<div class="box">
+		<div class="imgBox">
+			<img src="hobby/collab.JPG">
+		</div>
+		<div class="content">
+			<div class="content-collab">
+				<h2>Collaboration</h2>
+				<h3>With Ah Hua Teochew Fishball Noodle</h3>
+				<p>Sharing the joy of the founder's birthday, a giveaway collaboration was held 
+				where bottles and lunch boxes were customised with the winners' name and brand's 
+				name.</p>
+			</div>
+		</div>
+	</div>
+
+    <br><br><br>
+</div>
+	
+<div>
+	<section class="footer">
+	<br>
+	<section class="footer-header">
+	<h2>Contact Details</h2>
+	</section>
+
+	<section class="footer-body">
+	<p>Email: xinjie.kwan@u.nus.edu | <a href="./Kwan Xin Jie.pdf" target="_blank" style="color:white">Resume | <a href="https://www.linkedin.com/in/xinjie-kwan/" target="_blank" style="color:white">Linkedin</a></a></p>
+	<p>Email: coxovanessa@gmail.com | <a href="www.coxovanessa.com" style="color:white">Website | </a><a href="https://www.instagram.com/coxo_vanessa/?hl=en" style="color:white">Instagram</a></p>
+	</section>
+	</section>
+</div>
+
+</body>
+</html>
